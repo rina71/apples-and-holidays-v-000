@@ -66,7 +66,7 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each{|season,holiday| puts "#{season.capitalize}:"
   count = 0
-   holiday.each{|holiday, supply| puts "  #{holiday.capitalize}: #{supply[0]},#{supply[1]}"
+   holiday.each{|holiday, supply| puts "  #{holiday.capitalize}: #{supply.flatten}"
   }}
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
