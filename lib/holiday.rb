@@ -66,18 +66,12 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each{|season,holidays| puts "#{season.capitalize}:"
 binding. pry
-   holidays.each{|holiday, supply| puts "  #{holiday.to_s.split('_').map {|w| w.capitalize}.join(' ')}: #{supply.join(", ")}"
+   holidays.each{|holiday, supply| puts "  #{holiday.capitalize}",  "#{supply}"
 
-  # iterate through holiday_hash and print items such that your readout resembles:
-  # Winter:
-  #   Christmas: Lights, Wreath
-  #   New Years: Party Hats
-  # Summer:
-  #   Fourth Of July: Fireworks, BBQ
-  # etc.
+
 }}
 end
-
+# to_s.split('_').map {|w| w.capitalize}.join(' ')}: #{supply.join(", ")}"
 def all_holidays_with_bbq(holiday_hash)
 holy = []
 holiday_hash.map do|season,holidays|
