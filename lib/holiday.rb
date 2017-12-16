@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
 
    holidays.each do|holiday, supplies|
      binding.pry
-     puts "  #{holiday.capitalize}:", "#{supplies[0]}"
+    #  puts "  #{holiday.capitalize}:", "#{supplies[0]}"
    end
   end
 end
