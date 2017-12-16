@@ -83,9 +83,9 @@ holy = []
 holiday_hash.each{|season,holidays|
   holidays.collect{|holiday, supply| if supply.include?("BBQ") == true
     holy = holiday
-
+return holy
   end
-holy
+
   }}
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
