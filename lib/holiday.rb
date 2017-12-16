@@ -80,7 +80,7 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
 holiday_hash.each{|season,holiday|
-  season.each{|holiday, supply| if supply.include?("BBQ") == true
+  holiday.each{|holiday, supply| if supply.include?("BBQ") == true
     return holiday
 
   end}}
