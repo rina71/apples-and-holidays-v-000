@@ -65,7 +65,8 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each{|season,holiday| puts "#{season.capitalize}:"
-   holiday.each{|holiday, supply| puts "  #{holiday.capitalize}: #{supply[0]}, #{supply[1]}"
+  count = 0
+   holiday.each{|holiday, supply| puts "  #{holiday.capitalize}: #{supply[0]},#{supply[1]}"
   }}
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
@@ -78,6 +79,9 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
+holiday_hash.each{|season,holiday|
+  holiday.each{|holiday, supply| if supply.include?("BBQ") == true
+    holiday}}
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 
